@@ -1,0 +1,303 @@
+.navbar {
+      &.sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            right: 0;
+      }
+
+      &-wrapper {
+            background-color: $color-yellow;
+            border-top: 1px solid $color-borber;
+            border-bottom: 1px solid $color-borber;
+
+            .nav-master {
+                  li {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-left: 1px solid $color-borber;
+
+                        &.active {
+                              background-color: aliceblue;
+                        }
+
+                        &:hover {
+                              background-color: aliceblue;
+                        }
+
+                        &:last-child {
+                              border-right: 1px solid $color-borber;
+                        }
+
+                        a {
+                              color: $color-menu;
+                              font-size: 15px;
+                              font-family: $font-moul;
+                              font-weight: 700;
+                              display: flex;
+                              align-items: center;
+                              width: 100%;
+                              justify-content: center;
+                              padding: 15px 0;
+
+                              i {
+                                    display: none;
+
+                                    &.change-direction {
+                                          display: flex;
+                                          padding-left: 5px;
+                                          font-size: 22px;
+                                    }
+                              }
+                        }
+
+                        .drop-menu {
+                              top: 102%;
+                              width: 101%;
+                              background-color: $color-yellow;
+                              position: absolute;
+                              z-index: 99;
+                              display: none;
+
+                              li {
+
+                                    border-bottom: 1px solid $color-borber;
+
+                                    &:first-child {
+                                          border-right: 1px solid $color-borber;
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}
+
+
+@media(max-width: 992px) {
+      .navbar {
+            &-wrapper {
+                  background-color: $color-yellow;
+                  border-top: unset !important;
+                  border-bottom: unset !important;
+
+                  .toggle {
+                        i {
+                              font-size: 25px;
+                              color: $color-white;
+                              padding: 10px 20px;
+                        }
+                  }
+
+                  .bg-cover {
+                        position: absolute;
+                        width: 100%;
+                        height: 100vh;
+                        top: 0;
+                        left: -100%;
+                        z-index: 99;
+                        background-color: rgba(71, 71, 71, 0.423);
+                  }
+
+                  .navbar-menu {
+                        overflow: scroll;
+                        height: 100vh;
+                        position: absolute;
+                        width: 60%;
+                        left: -100%;
+                        top: 0;
+                        z-index: 99;
+                        background-color: $color-white;
+
+                        &-header {
+                              display: flex;
+                              align-items: center;
+                              position: relative;
+                              background-color: $color-primary;
+
+                              img {
+                                    height: 80px;
+                              }
+
+                              .close {
+                                    right: 0;
+                                    padding: 0 20px;
+                                    position: absolute;
+
+                                    i {
+                                          font-size: 30px;
+                                          color: $color-white;
+                                    }
+                              }
+                        }
+
+                        .nav-master {
+                              li {
+                                    align-items: start;
+                                    justify-content: start;
+                                    padding: 10px 20px;
+                                    border-left: unset;
+
+                                    &:last-child {
+                                          border-right: unset;
+                                    }
+
+                                    a {
+                                          padding: 0;
+                                          display: flex;
+                                          align-items: center;
+                                          justify-content: flex-start;
+                                          color: $color-black;
+                                          font-size: 18px;
+                                          font-family: $font-content;
+                                          font-weight: 400;
+                                          gap: 20px;
+
+                                          i {
+                                                display: flex;
+
+                                                &.change-direction {
+                                                      display: none;
+                                                }
+                                          }
+                                    }
+
+                                    .drop-menu {
+                                          z-index: 3;
+                                          top: 100%;
+                                          width: 101%;
+                                          left: 0;
+                                          background-color: $color-yellow;
+                                          position: absolute;
+                                          display: none;
+
+                                          li {
+                                                border-bottom: 1px solid $color-borber;
+
+                                                &:first-child {
+                                                      border-right: 1px solid $color-borber;
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+
+                        .category-title {
+                              padding: 16px 20px;
+                              font-family: $font-content;
+                              border: 1px solid $color-gray;
+                              background-color: $color-bg;
+                              color: $color-primary;
+                              font-size: 18px;
+                              font-weight: 600;
+                        }
+
+                        .category-master {
+
+                              .category-wrapper {
+                                    padding: 20px 20px;
+
+                                    li {
+                                          padding: 7px 0;
+
+
+                                          a {
+                                                gap: 5px;
+                                                align-items: center;
+                                                display: flex;
+                                                font-family: $font-content;
+                                                font-size: 18px;
+
+                                                i {
+                                                      font-size: 14px;
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}
+
+@media(max-width: 678px) {
+      .navbar {
+            &-wrapper {
+                  .navbar-menu {
+                        height: 100vh;
+                        position: absolute;
+                        width: 70%;
+
+                        &-header {
+                              img {
+                                    width: 80%;
+                                    height: auto;
+                              }
+
+                              .close {
+                                    i {
+                                          font-size: 25px;
+                                    }
+                              }
+                        }
+
+                        .nav-master {
+                              li {
+                                    align-items: start;
+                                    justify-content: start;
+                                    padding: 10px 20px;
+                                    border-left: unset;
+
+                                    &:last-child {
+                                          border-right: unset;
+                                    }
+
+                                    a {
+                                          display: flex;
+                                          align-items: center;
+                                          justify-content: flex-start;
+                                          color: $color-black;
+                                          font-size: 16px;
+                                          font-family: $font-content;
+                                          font-weight: 400;
+                                          gap: 10px;
+
+                                          i {
+                                                display: flex;
+                                          }
+                                    }
+
+                              }
+                        }
+
+                        .category-title {
+                              font-size: 17px;
+                        }
+
+                        .category-master {
+
+                              .category-wrapper {
+                                    padding: 10px 20px !important;
+
+                                    li {
+                                          a {
+                                                gap: 5px;
+                                                align-items: center;
+                                                display: flex;
+                                                font-family: $font-content;
+                                                font-size: 16px;
+
+                                                i {
+                                                      font-size: 14px;
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}

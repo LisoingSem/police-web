@@ -1,0 +1,489 @@
+main {
+      sidebar {
+            height: fit-content;
+
+            .category-title {
+                  padding: 16px 20px;
+                  font-family: $font-content;
+                  border: 1px solid $color-gray;
+                  background-color: $color-bg;
+                  color: $color-primary;
+                  font-size: 18px;
+                  font-weight: 600;
+            }
+
+            .category-wrapper {
+
+
+                  .category-master {
+                        background-color: $color-white;
+                        border-left: 1px solid $color-gray;
+                        border-right: 1px solid $color-gray;
+                        border-bottom: 1px solid $color-gray;
+
+                        .category-wrapper {
+                              padding: 10px 20px;
+
+                              li {
+                                    color: $color-black;
+                                    padding: 4px 0;
+
+                                    &.active{
+                                          color: $color-orange;
+                                    }
+
+                                    a {
+                                          gap: 5px;
+                                          align-items: center;
+                                          display: flex;
+                                          font-family: $font-content;
+                                          font-size: 16px;
+
+                                          &:hover {
+                                                span {
+                                                      color: $color-orange;
+                                                }
+                                          }
+
+                                          i {
+                                                font-size: 13px;
+                                          }
+                                    }
+                              }
+                        }
+                  }
+            }
+
+            .image-side {
+                  width: 100%;
+                  height: fit-content;
+                  object-fit: cover;
+                  background-color: $color-white;
+                  padding: 10px;
+            }
+
+            .video-side {
+                  width: 100%;
+                  height: fit-content;
+                  object-fit: cover;
+                  background-color: $color-white;
+                  padding: 10px;
+            }
+
+            .address {
+                  border: 1px solid $color-gray;
+                  // margin-bottom: 10px;
+                  background-color: $color-white;
+
+                  .header {
+                        background-color: $color-white;
+                        font-weight: bold;
+                        font-size: 22px;
+                        padding: 10px 15px;
+                        font-family: $font-content;
+                        color: $color-primary;
+                        border-bottom: 1px solid $color-boder;
+                  }
+
+                  .body {
+                        padding: 10px;
+                        font-family: $font-content;
+
+                        p {
+                              font-size: 16px;
+                        }
+
+                        hr {
+                              margin: 15px 0;
+                        }
+
+                        .wrapper {
+                              display: flex;
+                              align-items: center;
+                              font-size: 15px;
+
+                              h3 {
+                                    width: 90px;
+                              }
+                        }
+                  }
+            }
+
+            .social {
+                  border: 1px solid $color-gray;
+                  background-color: $color-white;
+
+                  .header {
+                        background-color: $color-white;
+                        font-weight: bold;
+                        font-size: 22px;
+                        padding: 10px 15px;
+                        font-family: $font-content;
+                        color: $color-primary;
+                        border-bottom: 1px solid $color-boder;
+                  }
+
+                  .body {
+                        height: 180px;
+                        padding: 10px;
+                        font-family: $font-content;
+
+                        &-wrapper {
+                              height: 100%;
+                              width: 100%;
+                              position: relative;
+                              overflow: hidden;
+
+                              .image-bg {
+                                    height: 100%;
+                                    width: 100%;
+                              }
+
+                              .bg-overlay {
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    background-color: rgb(49, 49, 49);
+                                    top: 0;
+                                    left: 0;
+                                    opacity: .4;
+                                    z-index: 1;
+                              }
+
+                              .content-overlay {
+                                    .social-links {
+                                          display: flex;
+
+                                          img {
+                                                position: absolute;
+                                                max-width: unset;
+                                                width: 45px;
+                                                z-index: 10;
+                                                top: 5px;
+                                                left: 10px;
+                                          }
+
+                                          p {
+                                                position: absolute;
+                                                white-space: nowrap;
+                                                overflow: hidden;
+                                                z-index: 10;
+                                                left: 60px;
+                                                top: 8px;
+                                                font-size: 16px;
+                                                font-family: $font-content;
+                                                color: $color-white;
+                                                text-decoration: underline;
+                                          }
+
+                                          span {
+                                                font-weight: lighter;
+                                                position: absolute;
+                                                white-space: nowrap;
+                                                overflow: hidden;
+                                                z-index: 10;
+                                                left: 60px;
+                                                top: 30px;
+                                                font-size: 10px;
+                                                font-family: $font-content;
+                                                color: $color-white;
+                                          }
+                                    }
+
+                                    .social-contact {
+                                          width: 100%;
+                                          position: absolute;
+                                          bottom: 20px;
+                                          display: flex;
+                                          z-index: 5;
+                                          justify-content: space-evenly;
+
+                                          .contact {
+                                                background-color: $color-white;
+                                                padding: 5px 10px;
+                                                border-radius: 5px;
+                                                font-size: 13px;
+                                                color: $color-primary;
+                                          }
+                                    }
+
+                              }
+                        }
+
+                  }
+            }
+
+            .map {
+                  border: 1px solid $color-gray;
+                  // margin-top: 10px;
+                  background-color: $color-white;
+
+                  .header {
+                        background-color: $color-white;
+                        font-weight: bold;
+                        font-size: 22px;
+                        padding: 10px 15px;
+                        font-family: $font-content;
+                        color: $color-primary;
+                        border-bottom: 1px solid $color-boder;
+                  }
+
+                  .body {
+                        padding: 10px;
+                        font-family: $font-content;
+
+                        iframe {
+                              width: 100%;
+                        }
+                  }
+            }
+
+            .download {
+                  border: 1px solid $color-gray;
+                  // margin-top: 10px;
+                  background-color: $color-white;
+
+                  .header {
+                        background-color: $color-white;
+                        font-weight: bold;
+                        font-size: 22px;
+                        padding: 10px 15px;
+                        font-family: $font-content;
+                        color: $color-primary;
+                        border-bottom: 1px solid $color-boder;
+                  }
+
+                  .body {
+                        padding: 0px 10px;
+
+                        .download-links {
+                              display: flex;
+                              align-items: center;
+                              gap: 10px;
+                        }
+
+                        .social-links {
+
+                              ul {
+                                    padding: 10px 0;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 10px;
+
+                                    li {
+                                          background-color: $color-yellow;
+                                          border-radius: 50%;
+                                          padding: 5px;
+
+                                          img {
+                                                width: 25px;
+                                          }
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}
+
+@media(max-width: 992px) {
+      main {
+            sidebar {
+                  .category-wrapper {
+                        display: none;
+                  }
+
+                  .address {
+                        .header {
+                              font-size: 19px;
+                              padding: 8px 15px;
+                        }
+
+                        .body {
+                              p {
+                                    font-size: 15px;
+                              }
+
+                              .wrapper {
+                                    font-size: 14px;
+
+                                    h3 {
+                                          width: 65px;
+                                    }
+                              }
+                        }
+                  }
+
+                  .social {
+                        .header {
+                              font-size: 19px;
+                              padding: 8px 15px;
+                        }
+
+                        .body {
+                              height: 150px;
+
+                              &-wrapper {
+                                    .content-overlay {
+                                          .social-links {
+                                                img {
+                                                      position: absolute;
+                                                      max-width: unset;
+                                                      width: 40px;
+                                                      z-index: 10;
+                                                      top: 5px;
+                                                      left: 5px;
+                                                }
+
+                                                p {
+                                                      left: 50px;
+                                                }
+
+                                                span {
+                                                      left: 50px;
+                                                }
+                                          }
+
+                                          .social-contact {
+
+                                                .contact {
+                                                      font-size: 9px;
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+                  }
+
+                  .map {
+                        .header {
+                              font-size: 19px;
+                              padding: 8px 15px;
+                        }
+
+                        .body {
+                              height: 150px;
+
+                              iframe {
+                                    width: 100%;
+                                    height: 100%;
+                              }
+                        }
+                  }
+
+                  .download {
+                        .header {
+                              font-size: 19px;
+                              padding: 8px 15px;
+                        }
+
+                        .body {
+                              .social-links {
+                                    ul {
+                                          li {
+                                                img {
+                                                      width: 20px;
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}
+
+@media(max-width: 480px) {
+      main {
+            sidebar {
+                  .address {
+                        .body {
+                              p {
+                                    font-size: 17px;
+                              }
+
+                              .wrapper {
+                                    font-size: 16px;
+
+                                    h3 {
+                                          width: 30%;
+                                    }
+                              }
+                        }
+                  }
+
+                  .social {
+                        .body {
+                              height: 200px;
+
+                              &-wrapper {
+                                    .content-overlay {
+                                          .social-links {
+                                                img {
+                                                      width: 50px;
+                                                }
+
+                                                p {
+                                                      font-size: 18px;
+                                                      left: 65px;
+                                                }
+
+                                                span {
+                                                      top: 35px;
+                                                      font-size: 15px;
+                                                      left: 65px;
+                                                }
+                                          }
+
+                                          .social-contact {
+
+                                                .contact {
+                                                      font-size: 17px;
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+                  }
+
+                  .map {
+
+                        .body {
+                              height: 200px;
+                        }
+                  }
+
+                  .download {
+                        .header {
+                              font-size: 19px;
+                              padding: 8px 15px;
+                        }
+
+
+
+                        .body {
+
+                              .download-links {
+                                    justify-content: center;
+
+                                    img {
+                                          width: 140px;
+                                    }
+                              }
+
+                              .social-links {
+                                    ul {
+                                          justify-content: center;
+
+                                          li {
+                                                img {
+                                                      width: 25px;
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}

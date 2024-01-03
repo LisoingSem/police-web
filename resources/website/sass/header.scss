@@ -1,0 +1,141 @@
+.header {
+      background-color: $color-primary;
+
+      &-wrapper {
+            align-items: center;
+
+            .logo {
+                  img {
+                        height: 120px;
+                  }
+            }
+
+            .search-box {
+                  align-items: flex-start;
+                  justify-content: flex-end;
+                  display: flex;
+                  flex-direction: column;
+
+                  input {
+                        height: 30px;
+                        border: none;
+                        outline: none;
+                        width: 280px;
+                        font-family: unset;
+                        font-size: 12px;
+                        padding: 8px;
+                  }
+
+                  ul {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+
+                        li {
+                              width: 38px;
+                              height: 38px;
+                              margin-right: 10px;
+                              border: 1px solid $color-white;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              border-radius: 50%;
+                              cursor: pointer;
+                        }
+
+                        img {
+                              width: 20px;
+                        }
+                  }
+            }
+      }
+}
+
+@media(max-width: 1240px) {
+      .header {
+            &-wrapper {
+                  padding-right: 10px;
+            }
+      }
+}
+
+@media(max-width: 992px) {
+      .header {
+            &-wrapper {
+                  .logo {
+                        img {
+                              height: 120px;
+                        }
+                  }               
+            }
+      }
+}
+
+@media(max-width: 768px) {
+      .header {
+            &-wrapper {
+                  .logo {
+                        img {
+                              height: 91px;
+                              width: fit-content;
+                        }
+                  }
+                  
+            }
+      }
+}
+
+@media(max-width: 577px) {
+      .header {
+            padding: 10px 0;
+
+            &-wrapper {
+                  .logo {
+                        img {
+                              margin: auto;
+                              height: auto;
+                              width: 95%;
+                        }
+                  }
+
+                  .search-box {
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        flex-direction: column;
+
+                        input {
+                              height: 30px;
+                              border: none;
+                              outline: none;
+                              width: 90%;
+                              font-family: unset;
+                              font-size: 12px;
+                              padding: 8px;
+                        }
+
+                        ul {
+                              display: flex;
+                              justify-content: flex-start;
+                              align-items: flex-start;
+
+                              li {
+                                    width: 38px;
+                                    height: 38px;
+                                    margin-right: 10px;
+                                    border: 1px solid $color-white;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border-radius: 50%;
+                                    cursor: pointer;
+                              }
+
+                              img {
+                                    width: 20px;
+                              }
+                        }
+                  }
+            }
+      }
+}

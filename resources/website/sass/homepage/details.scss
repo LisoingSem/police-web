@@ -1,0 +1,124 @@
+main {
+      content {
+            .details-news-wrapper {
+                  .header {
+                        display: flex;
+                        flex-direction: column;
+                        border: 1px solid $color-gray;
+                        background-color: $color-bg;
+                        padding: 16px 20px;
+                        font-family: $font-content;
+
+                        h3 {
+                              color: $color-primary;
+                              font-size: 21px;
+                              font-weight: 500;
+                        }
+
+                        .more-actions {
+                              display: flex;
+                              align-items: center;
+                              justify-content: space-between;
+                              padding: 15px 0 0;
+
+                              .shareTo {
+                                    display: flex;
+                                    gap: 7px;
+
+                                    .item {
+                                          padding: 5px;
+                                          background-color: $color-fb;
+                                          color: $color-white;
+                                          font-size: 14px;
+                                          padding: 5px 20px;
+                                          border-radius: 40px;
+
+                                          &:nth-child(2) {
+                                                background-color: $color-tg;
+                                          }
+                                    }
+                              }
+
+                              span {
+                                    color: $color-date;
+                                    font-size: 15px
+                              }
+
+                              ;
+                        }
+                  }
+
+                  .body {
+                        background-color: $color-white;
+                        border-left: 1px solid $color-gray;
+                        border-right: 1px solid $color-gray;
+                        padding: 20px 20px 15px 20px;
+                        font-family: $font-content;
+                        line-height: 27px;
+
+                        p {
+                              margin-bottom: 10px;
+                              font-size: 17px;
+                        }
+
+                        img {
+                              width: 100%;
+                              height: fit-content;
+                              margin-bottom: 12px;
+                        }
+
+
+                  }
+            }
+
+            .related {
+                  font-size: 19px;
+                  padding: 20px 0;
+                  font-family: $font-content;
+                  font-weight: 600;
+                  position: relative;
+                  overflow: hidden;
+
+                  &::after {
+                        position: absolute;
+                        content: '';
+                        transform: translate(0, -50%);
+                        top: 50%;
+                        width: 100%;
+                        height: 1px;
+                        background-color: $color-gray;
+                        margin-left: 10px;
+                  }
+            }
+
+            .related-wrapper {
+                  .body {
+                        background-color: $color-white;
+                        padding: 15px;
+
+                        .content-item {
+                              img {
+                                    height: 180px;
+                                    width: 100%;
+                              }
+
+                              h3 {
+                                    color: $color-primary;
+                                    font-family: $font-content;
+                                    overflow: hidden;
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 2;
+                                    line-clamp: 2;
+                                    -webkit-box-orient: vertical;
+                                    margin: 10px 0;
+                                    font-size: 18px;
+
+                                    &:hover{
+                                          color: $color-orange;
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}

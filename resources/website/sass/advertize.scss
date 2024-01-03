@@ -1,0 +1,218 @@
+.advertize {
+      margin-top: 10px;
+      overflow: hidden;
+      height: max-content;
+
+
+      &-wrapper {
+            height: 100%;
+            overflow: hidden;
+
+            &-content {
+                  height: fit-content;
+                  overflow: hidden;
+
+                  .content-one {
+                        height: 230px;
+                        overflow: hidden;
+
+                        img {
+                              height: 100%;
+                              width: fit-content;
+                              object-fit: cover;
+                        }
+                  }
+
+                  .content-two {
+                        height: 230px;
+
+                        img {
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                        }
+                  }
+
+                  .content-three {
+                        height: fit-content;
+
+                        iframe {
+                              height: 230px;
+                              width: 100%;
+                              object-fit: cover;
+                        }
+                  }
+            }
+      }
+}
+
+
+@media (max-width: 1240px) {
+      .advertize {
+            margin-top: 10px;
+            overflow: hidden;
+            height: max-content;
+
+
+            &-wrapper {
+                  height: 100%;
+                  overflow: hidden;
+
+                  &-content {
+                        height: fit-content;
+                        overflow: hidden;
+
+                        .content-one {
+                              height: 200px;
+                              overflow: hidden;
+
+                              img {
+                                    height: 100%;
+                                    width: fit-content;
+                                    object-fit: cover;
+                              }
+                        }
+
+                        .content-two {
+                              height: 200px;
+
+                              img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                              }
+                        }
+
+                        .content-three {
+                              height: fit-content;
+
+                              iframe {
+                                    height: 200px;
+                                    width: 100%;
+                                    object-fit: cover;
+                              }
+                        }
+                  }
+            }
+      }
+}
+
+@media (max-width: 991px) {
+      .advertize {
+            margin-top: 10px;
+            overflow: hidden;
+            height: max-content;
+
+
+            &-wrapper {
+                  height: 100%;
+                  overflow: hidden;
+
+                  &-content {
+                        height: fit-content;
+                        overflow: hidden;
+
+                        .content-one {
+                              height: 100%;
+                              overflow: hidden;
+                              padding-right: 5px;
+
+                              img {
+                                    height: fit-content;
+                                    width: 100%;
+                                    object-fit: cover;
+                              }
+                        }
+
+                        .content-two {
+                              height: 100%;
+                              margin-top: 10px;
+
+                              img {
+                                    width: 100%;
+                                    height: fit-content;
+                                    object-fit: cover;
+                              }
+                        }
+
+                        .content-three {
+                              height: 100%;
+                              padding-left: 5px;
+
+                              iframe {
+                                    height: 100%;
+                                    width: 100%;
+                                    object-fit: cover;
+                              }
+                        }
+                  }
+            }
+      }
+}
+
+@media (max-width: 677px) {
+      .advertize {
+            &-wrapper {
+                  &-content {
+                        height: fit-content;
+                        overflow: hidden;
+
+                        .content-one {
+                              height: 100%;
+                              overflow: hidden;
+
+                              img {
+                                    height: fit-content;
+                                    width: 100%;
+                                    object-fit: cover;
+                              }
+                        }
+
+                        .content-two {
+                              height: 100%;
+
+                              img {
+                                    width: 100%;
+                                    height: fit-content;
+                                    object-fit: cover;
+                              }
+                        }
+
+                        .content-three {
+                              iframe {
+                                    height: 250px;
+                                    width: 100%;
+                                    object-fit: cover;
+                              }
+                        }
+                  }
+            }
+      }
+}
+
+@media (max-width: 577px) {
+      .advertize {
+            &-wrapper {
+                  &-content {
+                        gap: 10px;
+
+                        .content-one {
+                              padding: unset;
+                        }
+
+                        .content-two {
+                              padding: unset;
+                              margin: unset ;
+                        }
+
+                        .content-three {
+                              padding: unset;
+
+                              iframe {
+                                    height: 300px;
+                              }
+                        }
+                  }
+            }
+      }
+}

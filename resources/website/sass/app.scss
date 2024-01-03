@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './font.scss';
+@import './variable.scss';
+@import './header.scss';
+@import './navbar.scss';
+@import 'text-runner.scss';
+@import './slider.scss';
+@import './advertize.scss';
+@import './homepage/content.scss';
+@import './homepage/video.scss';
+@import './homepage/arresting.scss';
+@import './homepage/details.scss';
+@import './about/leader.scss';
+@import './about/structure.scss';
+@import './contact.scss';
+@import './law.scss';
+@import './details.scss';
+@import './sidebar.scss';
+@import './footer.scss';
+
+// @import 'aos/dist/aos.css';
+
+// hover master 
+@import './hover/scss/hover.scss';
+
+html,
+body {
+      // height: 10000px;
+      overflow-x: hidden;
+      overscroll-behavior-x: none;
+      scroll-behavior: smooth;
+      background-image: linear-gradient(#f9f9f9 0.6000000000000001px, transparent 0.6000000000000001px), linear-gradient(to right, #f9f9f9 0.6000000000000001px, #eeeeee 0.6000000000000001px);
+      background-size: 12px 12px;
+}
+
+main {
+      margin-top: 10px;
+}
+
+.backToTopBtn {
+      width: 50px;
+      height: 50px;
+      background-color: #0c247b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 30px;
+      position: fixed;
+      bottom: 50px;
+      cursor: pointer;
+      z-index: 9;
+      color: #fff;
+      border-radius: 50%;
+}
+
+#loadingIndicator {
+      height: 200px;
+      background-color: $color-white;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      color: $color-primary;
+      gap: 10px;
+      font-family: $font-content;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      .sk-wave {
+            $rectCount: 5;
+            $animationDuration: 1.2s;
+            $delayRange: 0.4s;
+
+            width: 100%;
+            height: 4rem;
+            text-align: center;
+            font-size: 1em;
+
+            .sk-rect {
+                  background-color: $color-primary;
+                  height: 100%;
+                  width: .5em;
+                  display: inline-block;
+                  animation: sk-wave-stretch-delay $animationDuration infinite ease-in-out;
+            }
+
+            @for $i from 1 through $rectCount {
+                  .sk-rect-#{$i} {
+                        animation-delay: - $animationDuration + $delayRange / ($rectCount - 1) * ($i - 1);
+                  }
+            }
+      }
+
+
+      @keyframes sk-wave-stretch-delay {
+
+            0%,
+            40%,
+            100% {
+                  transform: scaleY(0.4);
+            }
+
+            20% {
+                  transform: scaleY(1.0);
+            }
+      }
+
+}

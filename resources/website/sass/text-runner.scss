@@ -1,0 +1,86 @@
+.text-runner {
+      margin-top: 10px;
+      &-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            background-color: $color-white;
+            font-family: $font-content;
+            height: 45px;
+            border: 1px solid $text-runner;
+            overflow: hidden;
+            // border-radius: 5px;
+
+            .title {
+                  position: absolute;
+                  display: flex;
+                  z-index: 2;
+                  height: 100%;
+
+                  .text {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        background-color: $color-red;
+                        padding: 0 20px;
+                        color: $color-white;
+                        font-weight: 500;
+                        font-size: 17px;
+                  }
+
+                  .corner {
+                        width: 15px;
+                        height: 100%;
+                        background-color: $color-red;
+                        clip-path: polygon(-1% 0, -1% 100%, 100% 50%);
+                  }
+            }
+
+            marquee {
+                  font-size: 17px;
+                  color: $color-primary;
+            }
+
+            .clock {
+                  height: 100%;
+                  align-items: center;
+                  position: absolute;
+                  display: flex;
+                  right: 0;
+                  z-index: 2;
+                  padding: 0 20px;
+                  font-weight: 700;
+                  font-size: 17px;
+                  color: $color-white;
+                  background-color: $color-red;
+            }
+      }
+}
+
+@media(max-width: 577px) {
+      .text-runner {
+            &-wrapper {
+                  position: relative;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding: 10px 0;
+                  margin-top: 5px;
+                  background-color: $color-white;
+                  font-family: $font-content;
+                  height: 45px;
+                  border: 1px solid $text-runner;
+                  overflow: hidden;
+
+                  .title {
+                        display: none;
+                  }
+
+                  .clock {
+                        display: none;
+                  }
+            }
+      }
+}
